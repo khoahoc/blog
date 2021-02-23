@@ -1,6 +1,6 @@
 module.exports = {
-  title: "My Site",
-  tagline: "The tagline of my site",
+  title: "SudoSys.com",
+  tagline: "Xây Dựng Hệ Thống 👩‍💻 | Tìm Hiểu Vũ Trụ 🌟 | Tìm Hiểu Con Người🧬.",
   url: "https://sudosys.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -10,7 +10,7 @@ module.exports = {
   projectName: "khoahoc.github.io", // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: "My Site",
+      title: "SudoSys.com",
       logo: {
         alt: "My Site Logo",
         src: "img/logo.svg",
@@ -19,12 +19,12 @@ module.exports = {
         {
           to: "docs/",
           activeBasePath: "docs",
-          label: "Docs",
+          label: "Tài Liệu Hướng Dẫn",
           position: "left",
         },
-        { to: "blog", label: "Blog", position: "left" },
+        { to: "blog", label: "Blog Cá Nhân", position: "left" },
         {
-          href: "https://github.com/khoahoc/blog",
+          href: "https://github.com/khoahoc",
           label: "GitHub",
           position: "right",
         },
@@ -34,50 +34,68 @@ module.exports = {
       style: "dark",
       links: [
         {
-          title: "Docs",
+          title: "Trang",
           items: [
             {
-              label: "Style Guide",
+              label: "Tài Liệu Hướng Dẫn",
               to: "docs/",
             },
             {
-              label: "Second Doc",
-              to: "docs/doc2/",
+              label: "Blog Cá Nhân",
+              to: "blog/",
+            },
+            {
+              label: "Ủng Hộ Tôi",
+              to: "#",
+            },
+            {
+              label: "Trang Chủ",
+              to: "/",
             },
           ],
         },
         {
-          title: "Community",
+          title: "Kênh Youtube",
           items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
+              label: "Lắng Động Đêm Về",
+              href:
+                "https://www.youtube.com/watch?v=PuS1WhH6qyQ&list=PL9of5PiY1lkfIcEnt2RZ4Fiq0K_JLu3k_",
             },
             {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
+              label: "Nhạc Đại Pháp",
+              href:
+                "https://www.youtube.com/watch?v=JKBXNUKkSRs&list=PUsSrvUHWzNt7yXWxzOkyjhw",
             },
             {
-              label: "Twitter",
-              href: "https://twitter.com/docusaurus",
+              label: "Kênh Của Tôi",
+              href: "#",
             },
           ],
         },
         {
-          title: "More",
+          title: "Liên Kết",
           items: [
             {
-              label: "Blog",
-              to: "blog",
+              label: "Pháp Luân Công",
+              to: "https://vi.falundafa.org/",
             },
             {
-              label: "GitHub",
-              href: "https://github.com/khoahoc/blog",
+              label: "Minh Huệ Net",
+              href: "https://vn.minghui.org/news/",
+            },
+            {
+              label: "Tinh Hoa TV",
+              href: "https://tinhhoa.tv/",
+            },
+            {
+              label: "The Epoch Times",
+              href: "https://etviet.com/",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} SudoSys, Inc. Built with Docusaurus.`,
     },
   },
   presets: [
