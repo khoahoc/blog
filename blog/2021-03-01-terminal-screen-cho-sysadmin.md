@@ -5,7 +5,7 @@ author: Sudoer
 author_title: Blog Admin
 author_url:
 author_image_url: /img/su_badge2.png
-tags: [books]
+tags: [sysadmin]
 ---
 
 ## GIỚI THIỆU
