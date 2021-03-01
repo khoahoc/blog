@@ -108,12 +108,12 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl: "https://github.com/khoahoc/blog/edit/main/",
+          editUrl: "https://github.com/khoahoc/blog/edit/master/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl: "https://github.com/khoahoc/blog/edit/main/",
+          editUrl: "https://github.com/khoahoc/blog/edit/master/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),

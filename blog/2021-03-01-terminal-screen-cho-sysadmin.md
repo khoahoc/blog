@@ -4,7 +4,7 @@ title: Terminal Screen Cho Sysadmin
 author: Sudoer
 author_title: Blog Admin
 author_url:
-author_image_url: ../static/img/su_badge2.png
+author_image_url: ../img/su_badge2.png
 tags: [sysadmin]
 ---
 
