@@ -9,6 +9,7 @@ module.exports = {
   favicon: "img/favicon.ico",
   organizationName: "khoahoc", // Usually your GitHub org/user name.
   projectName: "khoahoc.github.io", // Usually your repo name.
+  cname: "sudosys.com",
   themeConfig: {
     navbar: {
       title: "SudoSys.com",
