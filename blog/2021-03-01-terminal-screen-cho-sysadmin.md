@@ -12,7 +12,7 @@ tags: [sysadmin]
 
 Để tránh việc gián đoạn trong quá trình copy dữ liệu lớn như cúp điện, mất mạng v.v... Ảnh hưởng đến quá trình copy hoặc download v.v... Ta có giải phái phía dưới như sau:
 
-Giải pháp là sử dụng Screen, một ứng dụng trên CentOS và Ubuntu đều có. Cho phép bạn chạy ứng dụng ngầm (attach) phía bên trong chương trình Screen mà không cần thông qua máy bạn khi bạn thoát khỏi screen. Tất nhiên bạn có thể truy cập lại screen (deattach) bất cứ lúc nào, ở đâu và trên máy tính nào một cách dễ dàng.
+Giải pháp là sử dụng `Screen`, một ứng dụng trên CentOS và Ubuntu đều có. Cho phép bạn chạy ứng dụng ngầm (attach) phía bên trong chương trình `Screen` mà không cần thông qua máy bạn khi bạn thoát khỏi `screen`. Tất nhiên bạn có thể truy cập lại `screen` (deattach) bất cứ lúc nào, ở đâu và trên máy tính nào một cách dễ dàng.
 
 Để biết thêm thông tin chi tiết, vui lòng gõ dòng lệnh sau khi đã cài đặt screen: `man screen`.
 
