@@ -1,6 +1,7 @@
 module.exports = {
   title: "SudoSys.com",
-  tagline: "Xây Dựng Hệ Thống 👩‍💻 | Tìm Hiểu Vũ Trụ 🌟 | Tìm Hiểu Con Người🧬.",
+  tagline:
+    "Xây Dựng Hệ Thống 👩‍💻 | Nghiên Cứu Vũ Trụ 🌟 | Tìm Hiểu Con Người🧬.",
   url: "https://sudosys.com",
   baseUrl: "/",
   onBrokenLinks: "throw",

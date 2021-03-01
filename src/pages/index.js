@@ -8,33 +8,32 @@ import styles from "./styles.module.css";
 
 const features = [
   {
-    title: "Làm Việc Kiếm Tiền",
+    title: "Làm Việc",
     imageUrl: "img/undraw_docusaurus_mountain.svg",
     description: (
       <>
-        <code>Duy trì sự sống là điều kiện cần</code> để chúng ta có thể thực
-        hiện những điều mà ta mong muốn.
+        Làm việc là <code>điều kiện cần</code> để chúng ta có thể thực hiện
+        những <code>điều kiện đủ</code>.
       </>
     ),
   },
   {
-    title: "Học Tập Kỹ Thuật",
+    title: "Học Tập",
     imageUrl: "img/undraw_docusaurus_tree.svg",
     description: (
       <>
         Có rất nhiều thứ hay ho trên <u>Internet</u>. Nhưng điều đầu tiên là
-        phải có <code>kiến thức và ngôn ngữ</code> để hiểu mà trao đỗi và sử
-        dụng.
+        phải có <code>kiến thức cơ bản</code> để dễ dàng học thêm và chia sẽ.
       </>
     ),
   },
   {
-    title: "Tự Nghiên Cứu Khoa Học",
+    title: "Thực Hành",
     imageUrl: "img/undraw_docusaurus_react.svg",
     description: (
       <>
-        <code>Hãy siêu thường</code> bằng những việc làm bình thường trong cuộc
-        sống từ những kiến thức mà bạn có được từ <u>Internet</u>.
+        Làm những việc bình thường một cách chắc chắn là{" "}
+        <code>siêu thường</code> cũng là điều mà tôi hướng tới.
       </>
     ),
   },
