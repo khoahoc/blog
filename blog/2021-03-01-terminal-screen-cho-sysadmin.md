@@ -10,9 +10,11 @@ tags: [sysadmin]
 
 ## GIỚI THIỆU
 
-Để tránh việc gián đoạn trong quá trình copy dữ liệu lớn như cúp điện, mất mạng v.v... Ảnh hưởng đến quá trình copy hoặc download v.v... Ta có giải phái phía dưới như sau:
+Để tránh việc gián đoạn trong quá trình copy dữ liệu lớn như cúp điện, mất mạng v.v... Ảnh hưởng đến quá trình copy hoặc download. Ta có giải phái phía dưới như sau:
 
 Giải pháp là sử dụng `Screen`, một ứng dụng trên CentOS và Ubuntu đều có. Cho phép bạn chạy ứng dụng ngầm (attach) phía bên trong chương trình `Screen` mà không cần thông qua máy bạn khi bạn thoát khỏi `screen`. Tất nhiên bạn có thể truy cập lại `screen` (deattach) bất cứ lúc nào, ở đâu và trên máy tính nào một cách dễ dàng.
+
+![img](../static/img/linux-screen-command.png)
 
 Để biết thêm thông tin chi tiết, vui lòng gõ dòng lệnh sau khi đã cài đặt screen: `man screen`.
 
@@ -24,15 +26,17 @@ Vậy việc bạn `attach` bằng `screen` lên máy chủ, sẽ giúp máy ch�
 
 ### Trên CentOS
 
-> yum update
-
-> update install screen
+```shell
+yum update
+update install screen
+```
 
 ### Trên Ubuntu
 
-> apt update
-
-> apt install screen
+```shell
+apt update
+apt install screen
+```
 
 ## SỬ DỤNG
 
@@ -40,13 +44,19 @@ Vậy việc bạn `attach` bằng `screen` lên máy chủ, sẽ giúp máy ch�
 
 Để chạy ngầm (attach), trên màn hình terminal, ta gõ:
 
-> screen
+```shell
+screen
+```
 
 Bạn sẽ được đưa vào terminal mới. Lúc này, bạn có thể copy dữ liệu, move hoặc làm bất cứ thao tác gì như terminal thông thường. Sau khi bạn đã làm xong các thao tác, đến bước cuối cùng là chờ đợi quá trình copy, download v.v... tiến trình này chạy rất lâu, thì bạn có thể nhấn phím lần lượt là:
 
-> Giữ Ctrl, bấm A rồi bấm D
+```
+Giữ Ctrl
+Bấm A
+Bấm D
+```
 
-Có nghĩa là chúng ta chỉ giữ nút Ctrl, không giữ nút "A" và cũng không giữ nút "D", chỉ nhấn vào thôi.
+Có nghĩa là chúng ta chỉ `giữ nút Ctrl`, không giữ nút "A" và cũng không giữ nút "D", `chỉ nhấn` vào thôi.
 
 Vậy là cửa sổ lệnh của bạn đã được chạy ngầm (attach), và bạn sẽ được đưa về terminal ban đầu của mình. Lúc này, tiến trình không còn phụ thuộc vào terminal của bạn nữa.
 
@@ -56,7 +66,9 @@ Vậy là cửa sổ lệnh của bạn đã được chạy ngầm (attach), v�
 
 Đối với có một screen; việc bật lại (deattach); bạn chỉ cần gõ:
 
-> screen -r
+```
+screen -r
+```
 
 Nó sẽ tự động bật lại (deattach) ngay luôn.
 
@@ -64,10 +76,14 @@ Nó sẽ tự động bật lại (deattach) ngay luôn.
 
 Đối với trường hợp này, khi bạn gõ:
 
-> screen -r
+```
+ screen -r
+```
 
 Bạn sẽ được gợi ý lại `các screen` mà bạn đã ẩn đi. Bạn cần phải gõ <code>screen -r (mã của screen) </code>lúc bạn ẩn đi. Ví dụ:
 
-> screen -r screen-abc-2021-03-01
+```
+ screen -r screen-abc-2021-03-01
+```
 
 Thì bạn sẽ được đưa về screen đó. Tuy nhiên nếu không đúng screen bạn mong muốn thì đừng lo lắng, vì chỉ cần thực hiện giấu đi lại như hướng dẫn trên rồi gõ lại lệnh screen với mã khác thôi.
