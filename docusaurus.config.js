@@ -4,6 +4,7 @@ module.exports = {
     "Xây Dựng Hệ Thống 👩‍💻 | Nghiên Cứu Vũ Trụ 🌟 | Tìm Hiểu Con Người🧬.",
   url: "https://sudosys.com",
   baseUrl: "/",
+  cname: "sudosys.com",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
