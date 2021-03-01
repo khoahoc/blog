@@ -12,17 +12,15 @@ tags: [sysadmin]
 
 Để tránh việc gián đoạn trong quá trình copy dữ liệu lớn như cúp điện, mất mạng v.v... Ảnh hưởng đến quá trình copy hoặc download v.v... Ta có giải phái phía dưới như sau:
 
-Giải pháp là sử dụng Screen, một ứng dụng trên CentOS và Ubuntu đều có. Cho phép bạn chạy ứng dụng ngầm phía bên trong chương trình Screen mà không cần thông qua máy bạn khi bạn thoát khỏi screen. Tất nhiên bạn có thể truy cập lại screen bất cứ lúc nào, ở đâu và trên máy tính nào một cách dễ dàng lại rồi.
+Giải pháp là sử dụng Screen, một ứng dụng trên CentOS và Ubuntu đều có. Cho phép bạn chạy ứng dụng ngầm (attach) phía bên trong chương trình Screen mà không cần thông qua máy bạn khi bạn thoát khỏi screen. Tất nhiên bạn có thể truy cập lại screen (deattach) bất cứ lúc nào, ở đâu và trên máy tính nào một cách dễ dàng.
 
-Để biết thêm thông tin chi tiết, vui lòng gõ dòng lệnh phía dưới sau khi đã cài đặt screen :
-
-> man screen
+Để biết thêm thông tin chi tiết, vui lòng gõ dòng lệnh sau khi đã cài đặt screen: `man screen`.
 
 ## CÀI ĐẶT
 
-Thông thường, việc trao đỗi dữ liệu lớn giữa 2 máy chủ. Nên `screen` sẽ được cài chủ yếu trên một trong hai máy chủ này. Và sau khi cài đặt xong, thay vì bạn treo máy ở đó cả ngày. Thì bạn có thể dùng screen để ẩn nó xuống gọi là `attach` trên máy chủ đó. Để tránh việc laptop của ban đang `SSH` lên bị mất kết nối hoặc cúp điện v.v...
+Thông thường, việc trao đỗi dữ liệu lớn giữa 2 máy chủ. Nên `screen` sẽ được cài chủ yếu trên một trong hai máy chủ; máy mà chúng ta gõ lệnh và phải chờ đợi. Cụ thể là sau khi cài đặt xong, thay vì bạn treo máy ở đó cả ngày. Thì bạn có thể dùng screen để ẩn nó xuống gọi là `attach` trên máy chủ đó. Để tránh việc laptop của bạn đang `SSH` lên bị mất kết nối hoặc cúp điện v.v...
 
-Vậy việc bạn `attach` bằng `screen` lên máy chủ, sẽ giúp máy chủ không phụ thuộc vào terminal trên máy cá nhân của bạn nữa. Vậy tóm lại sau khi attach lên, bạn không phải lo lắng về máy tính cá nhân mình xảy ra vấn đề nữa.
+Vậy việc bạn `attach` bằng `screen` lên máy chủ, sẽ giúp máy chủ không phụ thuộc vào terminal trên máy cá nhân của bạn nữa. Vậy tóm lại sau khi bạn đã chạy ngầm (attach) lên bằng `screen`, bạn không phải lo lắng về máy tính cá nhân mình xảy ra vấn đề nữa.
 
 ### Trên CentOS
 
