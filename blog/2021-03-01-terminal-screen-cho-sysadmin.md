@@ -10,7 +10,7 @@ tags: [books]
 
 ## GIỚI THIỆU
 
-Việc là anh H copy dữ liệu dung lượng lớn. Mà mạng không ổn định thì không ổn định hoặc là đi ra ngoài, cái người đóng laptop lại hoặc như cúp điện thì phải copy dữ liệu ấy từ đầu. Thật là mệt mõi.
+Để tránh việc gián đoạn trong quá trình copy dữ liệu lớn như cúp điện, mất mạng v.v... Ảnh hưởng đến quá trình copy hoặc download v.v... Ta có giải phái phía dưới như sau:
 
 Giải pháp là sử dụng Screen, một ứng dụng trên CentOS và Ubuntu đều có. Cho phép bạn chạy ứng dụng ngầm phía bên trong chương trình Screen mà không cần thông qua máy bạn khi bạn thoát khỏi screen. Tất nhiên bạn có thể truy cập lại screen bất cứ lúc nào, ở đâu và trên máy tính nào một cách dễ dàng lại rồi.
 
