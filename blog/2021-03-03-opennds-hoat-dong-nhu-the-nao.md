@@ -8,6 +8,8 @@ author_image_url: /img/falundafa_avatar.jpg
 tags: [sysadmin]
 ---
 
+<!--truncate-->
+
 ## GIỚI THIỆU
 
 :::note

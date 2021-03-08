@@ -8,6 +8,8 @@ author_image_url: /img/falundafa_avatar.jpg
 tags: [project]
 ---
 
+<!--truncate-->
+
 :::note
 
 Nội dung được dịch bởi tác giả tại [trang chủ OpenNDS](https://openwrt.org/docs/guide-user/services/captive-portal/opennds) kèm với kiến thức hạn hẹp của bản thân

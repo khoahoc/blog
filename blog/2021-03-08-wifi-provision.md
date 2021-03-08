@@ -8,12 +8,19 @@ author_image_url: /img/falundafa_avatar.jpg
 tags: [sysadmin]
 ---
 
+<!--truncate-->
+
 # Wifi Provision
 
 Đây là tài liệu document chính hướng dẫn manual setup toàn bộ technical architect giữa các Access Point và Server Prometheus dược dàn dựng bởi `sudosys.com`.
+
 :::info
-Phía dưới là quá trình setup kỹ thuật, không bao gồm định nghĩa và hướng dẫn chi tiết.
+
+1. Tài liệu không phù hợp với người chưa có định nghĩa về các dịch vụ (services).
+2. Phía dưới là quá trình setup kỹ thuật. Định nghĩa của service cho biết mục tiêu của tác giả đang thực hiện.
+
 :::
+
 :::note
 
 Do trình độ kỹ thuật hạn hẹp, mong các bạn đọc giả có thể góp ý hoặc đặt câu hỏi thông qua phần `Liên Hệ` ở trên.
@@ -166,3 +173,80 @@ AVN26KwjzDRbQZAPf497+/gH8YuikvJKdzu01rO4riQNYSQALVw=
 ```
 
 **Đem file `public_key` ở trên và gắn vào file `authorized_keys` của Server.**
+
+### Setup Authorized Key
+
+Dynamic keys. Cập nhật sau...
+
+### Cài Đặt Các Gói
+
+```
+opkg update
+opkg install ttyd prometheus-node-exporter-lua-bmx6 prometheus-node-exporter-lua-bmx7 prometheus-node-exporter-lua-nat_traffic prometheus-node-exporter-lua-netstat prometheus-node-exporter-lua-openwrt prometheus-node-exporter-lua-textfile prometheus-node-exporter-lua-wifi prometheus-node-exporter-lua-wifi_stations autossh
+```
+
+### Config TTYD
+
+**Nội dung config:**
+
+```
+config ttyd
+	option interface '@loopback'
+	option command '/bin/sh -l
+```
+
+**Restart và enable service**
+
+```
+/etc/init.d/ttyd restart
+/etc/init.d/ttyd enable
+```
+
+### Config AutoSSH
+
+**Nội dung config:**
+
+```
+
+config autossh
+option ssh '-N -T
+-o StrictHostKeyChecking=no
+-o ServerAliveInterval=60
+-o ServerAliveCountMax=10
+-R $LOCAL_NAT_IP:2222:localhost:22
+-R $LOCAL_NAT_IP:9100:localhost:9100
+-R $LOCAL_NAT_IP:7681:localhost:7681
+noaccess@ssh.aps.meganet.com.vn -p 10422'
+option gatetime '0'
+option monitorport '0'
+option poll '600'
+option enabled '1'
+
+```
+
+**Restart và enable service**
+
+```
+/etc/init.d/autossh restart
+/etc/init.d/autossh enable
+```
+
+### Prometheus Lua
+
+Không có gì cần config, tuy nhiên cần hiểu cấu trúc thư mục để `develop`.
+
+## PROVISION SCRIPT
+
+### Setup Command
+
+Lệnh cài đặt phía dưới được áp dụng cho tất cả các Access Point của YunCore, bao gồm `501`, `701`, `702`, v.v...
+
+```
+wget --no-check-certificate  https://raw.githubusercontent.com/khoahoc/openwrt/main/ap_provision.sh -O - -q | sh
+```
+
+### Github Repository
+
+Link: https://github.com/khoahoc/openwrt
+
+_Script Automation được viết bởi tác giả theo cấu trúc document trên. Nếu Script trên được viết không đúng theo cấu trúc trên thì Script này được xem là lỗi thời_
