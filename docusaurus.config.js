@@ -24,8 +24,12 @@ module.exports = {
           position: "left",
         },
         { to: "blog", label: "Blog Cá Nhân", position: "left" },
-        { to: "#", label: "Danh Sách Ủng Hộ", position: "left" },
-        { to: "#", label: "Sử Dụng Quỹ", position: "left" },
+        { to: "#", label: "Ủng Hộ", position: "left" },
+        {
+          to: "mailto: cuongpv@sudosys.com",
+          label: "Liên Hệ",
+          position: "left",
+        },
         {
           href: "https://github.com/khoahoc",
           label: "GitHub",

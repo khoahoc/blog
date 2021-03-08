@@ -1,12 +1,17 @@
 ---
 slug: terminal-screen-cho-sysadmin
 title: Terminal Screen Cho Sysadmin
-author: Sudoer
+author: H6009
 author_title: Blog Admin
 author_url:
-author_image_url: /img/su_badge2.png
+author_image_url: /img/falundafa_avatar.jpg
 tags: [sysadmin]
 ---
+
+:::note
+
+Nội dung được tác giả tổng hợp bằng kiến thức hạn hẹp của bản thân. Vui lòng đọc tài liệu đầy đủ chính thức từ trang chủ.
+:::
 
 ## GIỚI THIỆU
 
